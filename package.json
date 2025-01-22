@@ -1,0 +1,8 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CharleenK/The-Infinite-Educator.git",
+  "author": "CharleenK <kuchiburu@hotmail.com>",
+  "license": "MIT"
+}
