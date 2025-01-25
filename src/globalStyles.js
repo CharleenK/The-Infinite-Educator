@@ -4,10 +4,11 @@ const GlobalStyle = createGlobalStyle`
   
   *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    box-sizing: border-box; 
   }
+
   body {
-    ${"" /* background: hsl(162deg 31% 62%) 45%; */}
       background-image: linear-gradient(
     315deg,
     hsl(70deg 60% 66%) 0%,
@@ -25,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
     hsl(191deg 40% 74%) 100%
   );
   height: 100%;
+  width: 100%;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
   }
   `;
 
