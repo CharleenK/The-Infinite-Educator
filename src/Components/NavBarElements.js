@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   display: flex;
-  ${'' /* background: #ffb3ff; */}
   height: 100px;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,12 @@ export const Nav = styled.nav`
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
   font-size: 20px;
-  border: 3px solid red;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 `;
 
 export const NavLink = styled(Link)`
