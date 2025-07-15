@@ -2,6 +2,11 @@ import React from "react";
 import { Nav, NavLink, NavMenu } from "./NavBarElements";
 import Logo from "../images/homePagePics/Logo.png";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -23,6 +28,20 @@ const Navbar = () => {
           <NavLink to="/learning">Learning Events</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavMenu>
+        <div>
+          <p>
+            <FontAwesomeIcon icon={faFacebook} />
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </p>
+        </div>
       </Nav>
     </>
   );
@@ -33,6 +52,7 @@ const StyledDiv1 = styled.div`
   height: 95%;
   width: 25%;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
   position: absolute;
   top: 0;
@@ -46,6 +66,5 @@ const StyledImg = styled.img`
 `;
 const StyledDiv2 = styled.div`
   border: 3px solid green;
-  font
 `;
 export default Navbar;
