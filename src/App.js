@@ -12,8 +12,8 @@ import GlobalStyle from "./globalStyles";
 const App = () => {
   return (
     <>
-      <GlobalStyle />
       <Navbar />
+      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
