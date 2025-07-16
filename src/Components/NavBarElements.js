@@ -1,4 +1,3 @@
-// import * as FaIcons from "./react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -12,11 +11,11 @@ export const Nav = styled.nav`
   z-index: 12;
   font-size: 20px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px); 
-  -webkit-backdrop-filter: blur(15px); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 7px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 `;
 
 export const NavLink = styled(Link)`
@@ -24,42 +23,39 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  ${"" /* padding: 0 1rem; */}
   height: 100%;
   cursor: pointer;
-  &.active {
-    color: #4d4dff;
-  }
-`;
-
-export const Titles = styled.div`
-  display: none;
-  color: #808080;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+    &.active {
+      color: #4d4dff; */
+    }
+  @media only screen and (max-width: 600px) {
+     color: purple;
+     flex: 1 1 90px;
+     font-size: 20px;
+  }  
+  @media only screen and (max-width: 400px) {
+     color: purple;
+     flex: 1 1 80px;
+     font-size: 16px;
+  }  
 `;
 
 export const NavMenu = styled.div`
+  border: 3px solid red;
   display: flex;
-  align-items: center;
-  margin-right: -30px;
-
-  @media screen and (max-width: 764px) {
-    ${"" /* display: none; */}
-    font-size: 18px;
-    flex-wrap: wrap;
-    margin-left: 200px;
-    margin-right: 20px;
+  flex-wrap: wrap;
+  font-size: 25px;
+  gap: 5px;
+  margin-left: 13%;
+  margin-right: 5%;
+  padding: 5px 5px 5px 5px;
+  justify-content: space-around;
+  width: 90%;
+  @media only screen and (max-width: 1360px) {
+    margin-left: 20%;
   }
-  @media screen and (max-width: 1175px) {
-    margin-left: 200px;
-    flex-wrap: wrap;
+  @media only screen and (max-width: 1160px) {
+    margin-left: 25%;
   }
 `;

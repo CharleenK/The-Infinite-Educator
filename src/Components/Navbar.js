@@ -1,4 +1,3 @@
-import React from "react";
 import { Nav, NavLink, NavMenu } from "./NavBarElements";
 import Logo from "../images/homePagePics/Logo.png";
 import styled from "styled-components";
@@ -20,32 +19,47 @@ const Navbar = () => {
           />
           <StyledDiv2>The Infinite Educator</StyledDiv2>
         </StyledDiv1>
-        <StyledNavMenu>
-          <StyledNavLink to="/">Home</StyledNavLink>
-          <StyledNavLink to="/about">About</StyledNavLink>
-          <StyledNavLink to="/workshops">Workshops</StyledNavLink>
-          <StyledNavLink to="/services">Services</StyledNavLink>
-          <StyledNavLink to="/learning">Learning Events</StyledNavLink>
-          <StyledNavLink to="/contact">Contact</StyledNavLink>
-        </StyledNavMenu>
-        <StyledDiv4>
+        <NavMenu>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/learning">Learning Events</NavLink>
+          <NavLink to="/workshops">Workshops</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </NavMenu>
+        <StyledDiv3>
           <p>
-            <FontAwesomeIcon icon={faFacebook} />
+            <a
+              href="https://www.facebook.com/profile.php?id=100066017271883"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faLinkedin} />
+            <a
+              href="https://www.linkedin.com/in/donna-skea-71771aa7"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <a href="1-514-651-6621">
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <a href="mailto:Donna.skea30@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
           </p>
-        </StyledDiv4>
+        </StyledDiv3>
       </Nav>
     </>
   );
 };
+
 const StyledDiv1 = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -60,37 +74,12 @@ const StyledDiv1 = styled.div`
   border: 3px solid black;
 `;
 
-const StyledNavMenu = styled.div`
-  border: 3px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 25px;
-  gap: 5px;
-  margin-left: 13%;
-  margin-right: 5%;
-  padding: 5px 5px 5px 5px;
-  justify-content: space-around;
-  width: 90%;
-  @media only screen and (max-width: 1360px) {
-    margin-left: 20%;
-  }
-  @media only screen and (max-width: 1160px) {
-    margin-left: 25%;
-  }
-`;
-
-const StyledNavLink = styled.div`
-  @media only screen and (max-width: 600px) {
-    color: purple;
-    flex: 1 1 90px;
-    font-size: 20px;
-  }
-`;
 const StyledImg = styled.img`
   display: flex;
   width: 6.2vw;
   border: 2px solid purple;
 `;
+
 const StyledDiv2 = styled.div`
   border: 3px solid green;
   font-size: 30px;
@@ -98,11 +87,10 @@ const StyledDiv2 = styled.div`
     font-size: 20px;
   }
 `;
-const StyledDiv4 = styled.div`
+const StyledDiv3 = styled.div`
   border: 3px solid pink;
   display: flex;
   flex-wrap: wrap;
-  ${"" /* padding: 5px 5px 5px 5px; */}
   align-items: center;
   justify-content: space-around;
   width: 15%;
@@ -113,7 +101,11 @@ const StyledDiv4 = styled.div`
   @media only screen and (max-width: 1300px) {
     width: 5%;
     display: block;
-e  }
+  }
+  @media only screen and (max-width: 400px) {
+    width: 7.5%;
+    display: block;
+  }
 `;
 
 export default Navbar;
