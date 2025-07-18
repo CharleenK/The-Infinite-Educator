@@ -1,7 +1,11 @@
-import { NavLink as Link } from "react-router-dom";
-import styled from "styled-components";
-import React from "react";
+import { Nav, NavLink, NavMenu } from "./NavBarElements";
 import Logo from "../images/homePagePics/Logo.png";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -18,93 +22,89 @@ const Navbar = () => {
         <NavMenu>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/workshops">Workshops</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/learning">Learning Events</NavLink>
+          <NavLink to="/workshops">Workshops</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavMenu>
+        <StyledDiv3>
+          <p>
+            <a
+              href="https://www.facebook.com/profile.php?id=100066017271883"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/donna-skea-71771aa7"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </p>
+          <p>
+            <a href="1-514-651-6621">
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+          </p>
+          <p>
+            <a href="mailto:Donna.skea30@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </p>
+        </StyledDiv3>
       </Nav>
     </>
   );
 };
+
 const StyledDiv1 = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 95%;
   width: 25%;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
   position: absolute;
   top: 0;
   left: 0;
   border: 3px solid black;
 `;
+
 const StyledImg = styled.img`
-  width: 6vw;
+  display: flex;
+  width: 6.2vw;
   border: 2px solid purple;
-  margin-left: -5px;
 `;
+
 const StyledDiv2 = styled.div`
   border: 3px solid green;
-  font
+  font-size: 30px;
+  @media only screen and (max-width: 1425px) {
+    font-size: 20px;
+  }
 `;
-const Nav = styled.nav`
+const StyledDiv3 = styled.div`
+  border: 3px solid pink;
   display: flex;
-  height: 100px;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  position: relative;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
-  z-index: 12;
-  font-size: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 7px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-`;
-
-const NavLink = styled(Link)`
-  color: rgb(2, 52, 254);
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
+  justify-content: space-around;
+  width: 15%;
   height: 100%;
-  cursor: pointer;
-  &.active {
-    color: #4d4dff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media only screen and (max-width: 1300px) {
+    width: 5%;
+    display: block;
   }
-`;
-// const Titles = styled.div`
-//   display: none;
-//   color: #808080;
-//   @media screen and (max-width: 768px) {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 75%);
-//     font-size: 1.8rem;
-//     cursor: pointer;
-//   }
-// `;
-const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: -30px;
-
-  @media screen and (max-width: 764px) {
-    ${"" /* display: none; */}
-    font-size: 18px;
-    flex-wrap: wrap;
-    margin-left: 200px;
-    margin-right: 20px;
-  }
-  @media screen and (max-width: 1175px) {
-    margin-left: 200px;
-    flex-wrap: wrap;
+  @media only screen and (max-width: 400px) {
+    width: 7.5%;
+    display: block;
   }
 `;
 
