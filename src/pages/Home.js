@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../Components/Footer";
 import "../styles/background.css";
 import styled from "styled-components";
-
+import brightIdea from "../images/homePagePics/brightIdea.png";
+import storyTime from "../images/homePagePics/storyTime.jpg";
+import playBlocks from "../images/homePagePics/playBlocks.jpg";
 const Home = () => {
   return (
     <>
@@ -10,6 +12,7 @@ const Home = () => {
         <StyledDiv1>
           <h1> Welcome to The Infinite Educator</h1>
           <h2>Childcare solutions that inspire!</h2>
+          <StyledImg src={brightIdea} />
           <p>
             Early childhood educators and early education teachers play a
             crucial role in guiding our children during their formative
@@ -21,6 +24,7 @@ const Home = () => {
             today's challenges and thrive in their classrooms.
           </p>
           <h2>Ongoing development</h2>
+          <StyledImg src={storyTime} />
           <p>
             Professional development in early childhood education is a dynamic
             journey of continuous learning and growth. The Infinite Educator
@@ -33,11 +37,12 @@ const Home = () => {
             that can be easily implemented into the classroom.
           </p>
           <h2>Tailored Programs</h2>
+          <StyledImg src={playBlocks} />
           <p>
             The Infinite Educator provides comprehensive workshops and mentoring
             services that are specifically tailored to meet the unique needs of
             your childcare facility or school.
-          </p>         
+          </p>
         </StyledDiv1>
       </div>
       <Footer />
@@ -46,5 +51,8 @@ const Home = () => {
 };
 
 const StyledDiv1 = styled.div``;
+const StyledImg = styled.img`
+  height: 200px;
+`;
 
 export default Home;

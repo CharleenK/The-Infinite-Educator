@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div>
       <h1>The Infinite Educator: Childcare Solutions that Inspire!</h1>
+      
       <h2>Our Guiding Principles</h2>
       <p>
         The Infinite Educator is dedicated to empowering educational
