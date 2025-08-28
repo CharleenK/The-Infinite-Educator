@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../Components/Footer";
 import "../styles/background.css";
 import styled from "styled-components";
-import brightIdea from "../images/homePagePics/brightIdea.png";
-import storyTime from "../images/homePagePics/storyTime.jpg";
-import playBlocks from "../images/homePagePics/playBlocks.jpg";
+import brightIdea from "../images/homePagePics/brightIdea2.png";
+import storyTime from "../images/homePagePics/storyTime2.jpg";
+import playBlocks from "../images/homePagePics/playBlocks2.jpg";
 const Home = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Home = () => {
         <StyledDiv1>
           <h1> Welcome to The Infinite Educator</h1>
           <h2>Childcare solutions that inspire!</h2>
-          <StyledImg src={brightIdea} />
+          <StyledImg1 src={brightIdea} alt="light bulb and child" />
           <p>
             Early childhood educators and early education teachers play a
             crucial role in guiding our children during their formative
@@ -24,7 +24,7 @@ const Home = () => {
             today's challenges and thrive in their classrooms.
           </p>
           <h2>Ongoing development</h2>
-          <StyledImg src={storyTime} />
+          <StyledImg2 src={storyTime} alt="teacher reads story to children" />
           <p>
             Professional development in early childhood education is a dynamic
             journey of continuous learning and growth. The Infinite Educator
@@ -37,7 +37,7 @@ const Home = () => {
             that can be easily implemented into the classroom.
           </p>
           <h2>Tailored Programs</h2>
-          <StyledImg src={playBlocks} />
+          <StyledImg3 src={playBlocks} alt="blocks spell play" />
           <p>
             The Infinite Educator provides comprehensive workshops and mentoring
             services that are specifically tailored to meet the unique needs of
@@ -51,8 +51,14 @@ const Home = () => {
 };
 
 const StyledDiv1 = styled.div``;
-const StyledImg = styled.img`
-  height: 200px;
+const StyledImg1 = styled.img`
+  width: 350px;
+`;
+const StyledImg2 = styled.img`
+  width: 350px;
+`;
+const StyledImg3 = styled.img`
+  width: 350px;
 `;
 
 export default Home;
