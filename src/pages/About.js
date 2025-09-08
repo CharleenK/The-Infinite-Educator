@@ -1,10 +1,21 @@
 import React from "react";
+// import "../styles/background.css";
+import styled from "styled-components";
+import childMessyHands from "../images/aboutPagePics/childMessyHands2.jpg";
+import teacherAndBalloons from "../images/aboutPagePics/teacher&balloons2.jpg";
+import teacherLaptop from "../images/aboutPagePics/teacherLaptop2.jpg";
+import profilePic from "../images/aboutPagePics/profile.jpeg";
 
 const About = () => {
   return (
     <div>
       <h1>The Infinite Educator: Childcare Solutions that Inspire!</h1>
+      <StyledImg1 src={childMessyHands} alt="bright fun looking classroom" />
       <h2>Our Guiding Principles</h2>
+      <StyledImg2
+        src={teacherAndBalloons}
+        alt="children and teachers playing with balloons"
+      />
       <p>
         The Infinite Educator is dedicated to empowering educational
         professionals through comprehensive support, proactive advocacy and
@@ -13,16 +24,29 @@ const About = () => {
         promote inclusive and innovative educational environments.
       </p>
       <h2>Our Mission</h2>
+      <StyledImg3
+        src={teacherLaptop}
+        alt="people gathered around a laptop, smiling"
+      />
       <p>
         To improve educational quality in early childhood settings. Empower
         educators with skills and knowledge and provide the early years
         community comprehensive professional growth and new opportunities.
       </p>
+      <h3>Donna Skea</h3>
+      <h4>
+        ECE faculty member at Vanier College and founder of The Infinite
+        Educator
+      </h4>
+      <StyledImg4 src={profilePic} alt="profile picture" />
       <p>
         With 30 years of experience in Early Childhood Education, I founded The
         Infinite Educator to empower and support educators and childcare
-        centers. Our mission is to build strong, positive communities within
-        childcare settings through tailored workshops and mentorship.
+        centers.
+      </p>
+      <p>
+        Our mission is to build strong, positive communities within childcare
+        settings through tailored workshops and mentorship.
       </p>
       <p>
         I offer guidance and strategies to foster a nurturing and collaborative
@@ -37,4 +61,17 @@ const About = () => {
   );
 };
 
+const StyledImg1 = styled.img`
+  width: 350px;
+`;
+const StyledImg2 = styled.img`
+  width: 350px;
+`;
+const StyledImg3 = styled.img`
+  width: 350px;
+`;
+const StyledImg4 = styled.img`
+  width: 200px;
+  border-radius: 50%;
+`;
 export default About;
