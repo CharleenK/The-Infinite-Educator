@@ -8,6 +8,7 @@ import specialNeeds from "../images/servicesPics/specialNeeds2.jpg";
 import brightClassroom from "../images/servicesPics/brightClassroom2.jpg";
 import maleTeacher from "../images/servicesPics/maleTeacher2.jpg";
 import paintedChild from "../images/servicesPics/paintedChild.jpg";
+
 const Services = () => {
   return (
     <>
