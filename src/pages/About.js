@@ -1,7 +1,7 @@
 import React from "react";
 // import "../styles/background.css";
 import styled from "styled-components";
-import brightClassroom from "../images/aboutPagePics/brightClassroom2.jpg";
+import childMessyHands from "../images/aboutPagePics/childMessyHands2.jpg";
 import teacherAndBalloons from "../images/aboutPagePics/teacher&balloons2.jpg";
 import teacherLaptop from "../images/aboutPagePics/teacherLaptop2.jpg";
 import profilePic from "../images/aboutPagePics/profile.jpeg";
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
       <h1>The Infinite Educator: Childcare Solutions that Inspire!</h1>
-      <StyledImg1 src={brightClassroom} alt="bright fun looking classroom" />
+      <StyledImg1 src={childMessyHands} alt="bright fun looking classroom" />
       <h2>Our Guiding Principles</h2>
       <StyledImg2
         src={teacherAndBalloons}
