@@ -34,7 +34,7 @@ const Services = () => {
         cultivate sustainable career resilience.
       </p>
       <h3>Educator Support & Development:</h3>
-      <StyledImg1 src={paintedChild} alt="child covered in paint"/>
+      <StyledImg1 src={paintedChild} alt="child covered in paint" />
       <p>
         To empower educators to elevate their teaching skills, inspire
         professional growth and enhance educational excellence.
@@ -49,7 +49,7 @@ const Services = () => {
         designed for immediate application in the classroom and support
         educators in creating a positive learning environment.
       </p>
-      <h3>Out of school team building:</h3>
+      <h3>After school team building:</h3>
       <StyledImg1 src={teacherMotivation} alt="group high-fiving" />
       <p>
         To foster a collaborative and supportive workplace culture, supporting
