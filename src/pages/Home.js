@@ -31,7 +31,7 @@ const Home = () => {
               </p>
             </StyledDiv3>
           </StyledDiv2>
-          <h2>Ongoing development</h2>
+          <StyledH2>Ongoing development</StyledH2>
           <StyledDiv2>
             <StyledImg2 src={storyTime} alt="teacher reads story to children" />
             <StyledDiv3>
@@ -50,7 +50,7 @@ const Home = () => {
               </p>
             </StyledDiv3>
           </StyledDiv2>
-          <h2>Tailored Programs</h2>
+          <StyledH2>Tailored Programs</StyledH2>
           <StyledDiv2>
             <StyledImg3 src={playBlocks} alt="blocks spell play" />
             <StyledDiv3>
@@ -90,26 +90,36 @@ const StyledDiv2 = styled.div`
   display: flex;
   border: 2px solid green;
   margin: auto;
-  width: 95%;
+  width: 98%;
   padding: 1.5%;
   text-align: center;
+  justify-content: center;
+  align-content: center;
 `;
 
 const StyledDiv3 = styled.div`
   border: 2px solid black;
-  width: 90%;
-  font-size: 2.5vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 95%;
+  font-size: 2vw;
   padding: 1.5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 1.5;
 `;
 
 const StyledImg1 = styled.img`
-  max-width: 350px;
+  width: 100%;
+  height: auto;
 `;
 const StyledImg2 = styled.img`
-  max-width: 350px;
+  width: 100%;
+  height: auto;
 `;
 const StyledImg3 = styled.img`
-  max-width: 350px;
+  width: 100%;
+  height: auto;
 `;
 
 export default Home;
