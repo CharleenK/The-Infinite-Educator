@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../Components/Footer";
 import "../styles/background.css";
 import styled from "styled-components";
-import brightIdea from "../images/homePagePics/brightIdea2.png";
+// import brightIdea from "../images/homePagePics/brightIdea2.png";
+import paintedChild from "../images/servicesPics/paintedChild.jpg";
+
 import storyTime from "../images/homePagePics/storyTime2.jpg";
 import playBlocks from "../images/homePagePics/playBlocks2.jpg";
 const Home = () => {
@@ -10,39 +12,55 @@ const Home = () => {
     <>
       <div className="gradient">
         <StyledDiv1>
-          <h1> Welcome to The Infinite Educator</h1>
-          <h2>Childcare solutions that inspire!</h2>
-          <StyledImg1 src={brightIdea} alt="light bulb and child" />
-          <p>
-            Early childhood educators and early education teachers play a
-            crucial role in guiding our children during their formative
-            years,laying a strong foundation for a brighter future.
-          </p>
-          <p>
-            At the Infinite Educator, we offer workshops, seminars and mentoring
-            sessions designed to empower the early years community to meet
-            today's challenges and thrive in their classrooms.
-          </p>
-          <h2>Ongoing development</h2>
-          <StyledImg2 src={storyTime} alt="teacher reads story to children" />
-          <p>
-            Professional development in early childhood education is a dynamic
-            journey of continuous learning and growth. The Infinite Educator
-            supports the early years community through innovative and creative
-            approaches to professional development.
-          </p>
-          <p>
-            Our workshops and mentoring sessions will inspire educators and
-            teachers with current research and hands on practical strategies
-            that can be easily implemented into the classroom.
-          </p>
-          <h2>Tailored Programs</h2>
-          <StyledImg3 src={playBlocks} alt="blocks spell play" />
-          <p>
-            The Infinite Educator provides comprehensive workshops and mentoring
-            services that are specifically tailored to meet the unique needs of
-            your childcare facility or school.
-          </p>
+          <StyledH1> Welcome to The Infinite Educator</StyledH1>
+          <StyledH2>Childcare solutions that inspire!</StyledH2>
+          <StyledDiv2>
+            <StyledDiv3>
+              <p>
+                Early childhood educators and early education teachers play a
+                crucial role in guiding our children during their formative
+                years,laying a strong foundation for a brighter future.
+              </p>
+            </StyledDiv3>
+            <StyledImg1 src={paintedChild} alt="child covered in paint" />
+            <StyledDiv3>
+              <p>
+                At the Infinite Educator, we offer workshops, seminars and
+                mentoring sessions designed to empower the early years community
+                to meet today's challenges and thrive in their classrooms.
+              </p>
+            </StyledDiv3>
+          </StyledDiv2>
+          <StyledH2>Ongoing development</StyledH2>
+          <StyledDiv2>
+            <StyledImg2 src={storyTime} alt="teacher reads story to children" />
+            <StyledDiv3>
+              <p>
+                Professional development in early childhood education is a
+                dynamic journey of continuous learning and growth. The Infinite
+                Educator supports the early years community through innovative
+                and creative approaches to professional development.
+              </p>
+            </StyledDiv3>
+            <StyledDiv3>
+              <p>
+                Our workshops and mentoring sessions will inspire educators and
+                teachers with current research and hands on practical strategies
+                that can be easily implemented into the classroom.
+              </p>
+            </StyledDiv3>
+          </StyledDiv2>
+          <StyledH2>Tailored Programs</StyledH2>
+          <StyledDiv2>
+            <StyledImg3 src={playBlocks} alt="blocks spell play" />
+            <StyledDiv3>
+              <p>
+                The Infinite Educator provides comprehensive workshops and
+                mentoring services that are specifically tailored to meet the
+                unique needs of your childcare facility or school.
+              </p>
+            </StyledDiv3>
+          </StyledDiv2>
         </StyledDiv1>
       </div>
       <Footer />
@@ -50,15 +68,58 @@ const Home = () => {
   );
 };
 
-const StyledDiv1 = styled.div``;
+const StyledH1 = styled.h1`
+  font-size: 6vw;
+  color: rgba(16, 145, 87, 1);
+`;
+
+const StyledH2 = styled.h2`
+  font-size: 3.5vw;
+  color: rgba(241, 254, 248, 1);
+`;
+const StyledDiv1 = styled.div`
+  border: 2px solid blue;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+`;
+
+const StyledDiv2 = styled.div`
+  display: flex;
+  border: 2px solid green;
+  margin: auto;
+  width: 98%;
+  padding: 1.5%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+`;
+
+const StyledDiv3 = styled.div`
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 95%;
+  font-size: 2vw;
+  padding: 1.5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 1.5;
+`;
+
 const StyledImg1 = styled.img`
-  width: 350px;
+  width: 100%;
+  height: auto;
 `;
 const StyledImg2 = styled.img`
-  width: 350px;
+  width: 100%;
+  height: auto;
 `;
 const StyledImg3 = styled.img`
-  width: 350px;
+  width: 100%;
+  height: auto;
 `;
 
 export default Home;

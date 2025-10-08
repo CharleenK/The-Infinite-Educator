@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+// import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
-          <NavLink to="/learning">Learning Events</NavLink>
+          <NavLink to="/learning">Partnerships</NavLink>
           <NavLink to="/workshops">Workshops</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavMenu>
@@ -44,11 +44,11 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </p>
-          <p>
+          {/* <p>
             <a href="1-514-651-6621">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
-          </p>
+          </p> */}
           <p>
             <a href="mailto:Donna.skea30@gmail.com" target="_blank">
               <FontAwesomeIcon icon={faEnvelope} />
