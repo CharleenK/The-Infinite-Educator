@@ -50,10 +50,10 @@ const About = () => {
         </StyledDiv2>
         <StyledDiv2>
           <StyledH3>Donna Skea</StyledH3>
-          <h4>
+          <StyledH4>
             ECE faculty member at Vanier College and founder of The Infinite
             Educator
-          </h4>
+          </StyledH4>
           <StyledImg4 src={profilePic} alt="profile picture" />
           <StyledDiv3>
             <p>
@@ -93,11 +93,11 @@ const StyledDivA = styled.div`
 `;
 const StyledH1 = styled.h1`
   text-align: center;
-  font-size: 4.5vw;
-  color: rgba(16, 145, 87, 1);
   position: absolute;
-  top: 50%;
-  left: 50%;
+  font-size: 4.5vw;
+  color: rgba(75, 229, 160, 1);
+  top: 20%;
+  left: 32%;
   transform: translate(-50%, -50%);
 `;
 
@@ -110,6 +110,10 @@ const StyledH2 = styled.h2`
 const StyledH3 = styled.h3`
   font-size: 3vw;
   color: rgba(241, 254, 248, 1);
+  padding: 1%;
+`;
+
+const StyledH4 = styled.h4`
   padding: 1%;
 `;
 
