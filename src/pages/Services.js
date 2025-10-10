@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import colorfulClay from "../images/servicesPics/colorfulClay.jpg";
+// import colorfulClay from "../images/servicesPics/colorfulClay.jpg";
 import teacherHug from "../images/servicesPics/teacher&hug2.jpg";
 import holdingHands from "../images/servicesPics/holdingHands.jpg";
 // import teacherMotivation from "../
 import bricolage from "../images/servicesPics/bricolage2.jpg";
-import specialNeeds from "../images/servicesPics/specialNeeds2.jpg";
+// import specialNeeds from "../images/servicesPics/specialNeeds2.jpg";
 import brightClassroom from "../images/servicesPics/brightClassroom2.jpg";
 
 const Services = () => {
@@ -28,40 +28,23 @@ const Services = () => {
           </p>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Educator Wellness:</h2>
-          <StyledImg1 src={teacherHug} alt="child hugging teacher" />
+          <h2>Room Assessments & Arrangement:</h2>
+          <StyledImg1 src={brightClassroom} alt="bright, organized classroom" />
           <p>
-            to empower educators with comprehensive, evidence-based strategies
-            that restore professional fulfillment, mitigate workplace stress and
-            cultivate sustainable career resilience.
+            To assist educators in creating age and developmentally supportive
+            classroom environments that foster learning through play.
           </p>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Educator Support & Development:</h2>
+          <h2>Program Consultations:</h2>
+          {/* <StyledImg1
+            src={specialNeeds}
+            alt="teacher playing with special needs child"
+          /> */}
           <p>
-            To empower educators to elevate their teaching skills, inspire
-            professional growth and enhance educational excellence.
-          </p>
-        </StyledDiv2>
-        <StyledDiv2>
-          <h2>Power of Positive Guidance:</h2>
-          <StyledImg1
-            src={holdingHands}
-            alt="child's hand holding adult's finger"
-          />
-          <p>
-            To deliver evidence-based classroom management strategies that are
-            designed for immediate application in the classroom and support
-            educators in creating a positive learning environment.
-          </p>
-        </StyledDiv2>
-        <StyledDiv2>
-          <h2>After school team building:</h2>
-          {/* <StyledImg1 src={teacherMotivation} alt="group high-fiving" /> */}
-          <p>
-            To foster a collaborative and supportive workplace culture,
-            supporting positive personal dynamics to create an engaging team
-            environment.
+            To offer comprehensive program consultation that empowers educators
+            to deliver a positive, evidence based, and developmentally
+            appropriate curriculum.
           </p>
         </StyledDiv2>
         <StyledDiv2>
@@ -75,23 +58,40 @@ const Services = () => {
           </p>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Program Consultations:</h2>
-          <StyledImg1
-            src={specialNeeds}
-            alt="teacher playing with special needs child"
-          />
+          <h2>Educator Support & Development:</h2>
           <p>
-            To offer comprehensive program consultation that empowers educators
-            to deliver a positive, evidence based, and developmentally
-            appropriate curriculum.
+            To empower educators to elevate their teaching skills, inspire
+            professional growth and enhance educational excellence.
           </p>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Room Assessments & Arrangement:</h2>
-          <StyledImg1 src={brightClassroom} alt="bright, organized classroom" />
+          <h2>Educator Wellness:</h2>
+          <StyledImg1 src={teacherHug} alt="child hugging teacher" />
           <p>
-            To assist educators in creating age and developmentally supportive
-            classroom environments that foster learning through play.
+            To empower educators with comprehensive, evidence-based strategies
+            that restore professional fulfillment, mitigate workplace stress and
+            cultivate sustainable career resilience.
+          </p>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h2>After school team building:</h2>
+          {/* <StyledImg1 src={teacherMotivation} alt="group high-fiving" /> */}
+          <p>
+            To foster a collaborative and supportive workplace culture,
+            supporting positive personal dynamics to create an engaging team
+            environment.
+          </p>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h2>Power of Positive Guidance:</h2>
+          <StyledImg1
+            src={holdingHands}
+            alt="child's hand holding adult's finger"
+          />
+          <p>
+            To deliver evidence-based classroom management strategies that are
+            designed for immediate application in the classroom and support
+            educators in creating a positive learning environment.
           </p>
         </StyledDiv2>
         <StyledDiv2>
@@ -112,6 +112,7 @@ const StyledDiv1 = styled.div`
   border: 2px solid blue;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
+  font-size: 2.5vw;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
