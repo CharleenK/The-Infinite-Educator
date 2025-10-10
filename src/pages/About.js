@@ -140,19 +140,23 @@ const StyledDiv2 = styled.div`
 
 const StyledDiv3 = styled.div`
   border: 3px solid pink;
+  font-size: 2vw;
   padding: 1%;
 `;
 
 const StyledImg1 = styled.img`
-  width: 100%;
+  width: 75%;
   height: auto;
+  margin-left: 12.5%;
+  border: 10px solid white;
+  border-radius: 5px;
 `;
 const StyledImg2 = styled.img`
-  width: 75%;
+  width: 50%;
   height: auto;
 `;
 const StyledImg3 = styled.img`
-  width: 100%;
+  width: 50%;
   height: auto;
 `;
 const StyledImg4 = styled.img`
