@@ -13,27 +13,35 @@ const Services = () => {
       <StyledDiv1>
         <StyledDiv2>
           <h1>Our Services</h1>
-          <p>
-            The Infinite Educator offers a range of workshops and mentoring
-            services to support, inspire and create a positive early childhood
-            community.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              The Infinite Educator offers a range of workshops and mentoring
+              services to support, inspire and create a positive early childhood
+              community.
+            </p>
+          </StyledDiv3>
           {/* <StyledImg1
           src={colorfulClay}
           alt="toddler placing clay to form a row"
         /> */}
-          <p>
-            The Infinite Educator specializes in early childhood, out of school
-            and PreK and Kindergarten in the following areas:
-          </p>
+          <StyledDiv3>
+            <p>
+              The Infinite Educator specializes in early childhood, out of
+              school and PreK and Kindergarten in the following areas:
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h2>Room Assessments & Arrangement:</h2>
           <StyledImg1 src={brightClassroom} alt="bright, organized classroom" />
-          <p>
-            To assist educators in creating age and developmentally supportive
-            classroom environments that foster learning through play.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              To assist educators in creating age and developmentally supportive
+              classroom environments that foster learning through play.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h2>Program Consultations:</h2>
@@ -41,46 +49,37 @@ const Services = () => {
             src={specialNeeds}
             alt="teacher playing with special needs child"
           /> */}
-          <p>
-            To offer comprehensive program consultation that empowers educators
-            to deliver a positive, evidence based, and developmentally
-            appropriate curriculum.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              To offer comprehensive program consultation that empowers
+              educators to deliver a positive, evidence based, and
+              developmentally appropriate curriculum.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h2>PreK and Kindergarten workshops:</h2>
           <StyledImg1 src={bricolage} alt="child using scissors" />
-          <p>
-            To collaborate with PreK and Kindergarten teachers to provide
-            guidance on facilitating free play experiences, optimizing classroom
-            setups, and deepening their understanding of child development
-            stages and milestones.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              To collaborate with PreK and Kindergarten teachers to provide
+              guidance on facilitating free play experiences, optimizing
+              classroom setups, and deepening their understanding of child
+              development stages and milestones.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h2>Educator Support & Development:</h2>
-          <p>
-            To empower educators to elevate their teaching skills, inspire
-            professional growth and enhance educational excellence.
-          </p>
-        </StyledDiv2>
-        <StyledDiv2>
-          <h2>Educator Wellness:</h2>
-          <StyledImg1 src={teacherHug} alt="child hugging teacher" />
-          <p>
-            To empower educators with comprehensive, evidence-based strategies
-            that restore professional fulfillment, mitigate workplace stress and
-            cultivate sustainable career resilience.
-          </p>
-        </StyledDiv2>
-        <StyledDiv2>
-          <h2>After school team building:</h2>
-          {/* <StyledImg1 src={teacherMotivation} alt="group high-fiving" /> */}
-          <p>
-            To foster a collaborative and supportive workplace culture,
-            supporting positive personal dynamics to create an engaging team
-            environment.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              To empower educators to elevate their teaching skills, inspire
+              professional growth and enhance educational excellence.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h2>Power of Positive Guidance:</h2>
@@ -88,19 +87,48 @@ const Services = () => {
             src={holdingHands}
             alt="child's hand holding adult's finger"
           />
-          <p>
-            To deliver evidence-based classroom management strategies that are
-            designed for immediate application in the classroom and support
-            educators in creating a positive learning environment.
-          </p>
+          <StyledDiv3>
+            {" "}
+            <p>
+              To deliver evidence-based classroom management strategies that are
+              designed for immediate application in the classroom and support
+              educators in creating a positive learning environment.
+            </p>
+          </StyledDiv3>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h2>After school team building:</h2>
+          {/* <StyledImg1 src={teacherMotivation} alt="group high-fiving" /> */}
+          <StyledDiv3>
+            {" "}
+            <p>
+              To foster a collaborative and supportive workplace culture,
+              supporting positive personal dynamics to create an engaging team
+              environment.
+            </p>
+          </StyledDiv3>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h2>Educator Wellness:</h2>
+          <StyledImg1 src={teacherHug} alt="child hugging teacher" />
+          <StyledDiv3>
+            {" "}
+            <p>
+              To empower educators with comprehensive, evidence-based strategies
+              that restore professional fulfillment, mitigate workplace stress
+              and cultivate sustainable career resilience.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
           <h3>Reflective Practices:</h3>
-          <p>
-            To empower educators and teachers in enhancing their reflective
-            practices, enabling them to grow as intentional professionals and
-            reach their fullest potential.
-          </p>
+          <StyledDiv3>
+            <p>
+              To empower educators and teachers in enhancing their reflective
+              practices, enabling them to grow as intentional professionals and
+              reach their fullest potential.
+            </p>
+          </StyledDiv3>
         </StyledDiv2>
       </StyledDiv1>
     </>
@@ -112,7 +140,6 @@ const StyledDiv1 = styled.div`
   border: 2px solid blue;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
-  font-size: 2.5vw;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +155,16 @@ const StyledDiv2 = styled.div`
   border-radius: 25px;
   margin: 2.5%;
   padding: 0% 1.5% 1.5%;
+`;
+
+const StyledDiv3 = styled.div`
+  border: 4px solid orange;
+  font-size: 2.25vw;
+  ${
+    "" /* @media only screen and(min-width:500px) {
+    font-size: 5vw; */
+  }
+  ${"" /* } */}
 `;
 
 const StyledImg1 = styled.img`
