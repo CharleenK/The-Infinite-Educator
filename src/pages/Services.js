@@ -170,4 +170,5 @@ const StyledDiv3 = styled.div`
 const StyledImg1 = styled.img`
   width: 350px;
 `;
+
 export default Services;
