@@ -11,7 +11,7 @@ const LearningEvents = () => {
         <StyledDiv2>
           <h3>
             One Team, One Dream:Building a Positive Early Childhood Community
-            Teamwork Workshop
+            Teamwork
           </h3>
           <p>
             This interactive workshop aims to empower participants by enhancing
@@ -43,20 +43,19 @@ const LearningEvents = () => {
           </p>
         </StyledDiv2>
         <StyledDiv2>
-          <h2> Workshops include:</h2>
-          <ul>
-            <li>
-              A pre-meeting between presenter and organizer to narrow down the
-              topic that will be discussed.
-            </li>
-            <li>
-              A pre workshop meeting will take place to finalize the workshop.
-            </li>
-            <li>2-4 hrs of theory-based research on topic.</li>
-            <li>Creation of a PowerPoint presentation </li>
-            <li>Travel</li>
-            <li>Each workshop is 2-3hrs</li>
-          </ul>
+          <h3>
+            Affective Relationships:Building a community of learners in after
+            school care
+          </h3>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h3>Strategies and Solutions: Children’s Challenging Behaviours</h3>
+        </StyledDiv2>
+        <StyledDiv2>
+          <h3>
+            Making a difference: The important role that school age educators
+            have in the lives of young children
+          </h3>
         </StyledDiv2>
       </StyledDiv1>
     </>
@@ -76,13 +75,14 @@ const StyledDiv1 = styled.div`
   text-align: center;
   margin: 2.5%;
   padding: 1.5%;
+  font-size: 2vw;
 `;
 
 const StyledDiv2 = styled.div`
   border: 2px solid green;
   border-radius: 25px;
   margin: 2.5%;
-  padding: 0% 1.5% 1.5%;
+  padding: 1.5%;
 `;
 
 export default LearningEvents;
