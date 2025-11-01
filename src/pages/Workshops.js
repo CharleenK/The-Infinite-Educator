@@ -3,13 +3,15 @@ import styled from "styled-components";
 const Workshops = () => {
   return (
     <>
-      <h1>PreK and Kindergarten workshops:</h1>
+    <h1>Teacher and Educator workshops:</h1>
+    <h1>PreK and Kindergarten workshops:</h1>
       <p>
         To collaborate with PreK and Kindergarten teachers to provide guidance
         on facilitating free play experiences, optimizing classroom setups, and
         deepening their understanding of child development stages and
         milestones.
       </p>
+      <h1>School-age workshops:</h1>
       <p>
         Building a community of learners in after school care The beginning of a
         new school year sets the tone for the months ahead and plays a
