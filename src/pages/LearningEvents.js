@@ -1,5 +1,8 @@
 import styled from "styled-components";
-
+import learn20 from "../images/partnershipPics/learn20.png";
+import lesterB from "../images/partnershipPics/lesterB.png";
+import newFrontier from "../images/partnershipPics/newFrontier.png";
+import sirWilPel from "../images/partnershipPics/sirWilPel.png";
 const LearningEvents = () => {
   return (
     <>
@@ -7,7 +10,7 @@ const LearningEvents = () => {
         <h1>Learning Events</h1>
         <StyledDiv2>
           <h2>Workshops</h2>
-          <h3>Childcare Educators</h3>
+          <h3>Childcare Teachers and Educators</h3>
           <StyledDiv3>
             <ul>
               <StyledLi>
@@ -35,8 +38,7 @@ const LearningEvents = () => {
           <h3>School Age</h3>
           <StyledDiv3>
             <StyledLi>
-              Affective Relationships: Building a community of learners in after
-              school care
+              Affective Relationships: Building a community of learners
             </StyledLi>
             <StyledLi>
               Strategies and Solutions: Children’s Challenging Behaviours
@@ -52,6 +54,13 @@ const LearningEvents = () => {
         </StyledDiv2>
         <StyledDiv2>
           <h2>Partnerships</h2>
+          <StyledImg1 src={learn20} alt="Learn 20 Logo" />
+          <StyledImg2 src={lesterB} alt="Lester B. Pearson School Board Logo" />
+          <StyledImg3
+            src={sirWilPel}
+            alt=" Sir Wilfred Laurier School Board Logo"
+          />
+          <StyledImg4 src={newFrontier} alt="New Frontiers Logo" />
         </StyledDiv2>
       </StyledDiv1>
     </>
@@ -91,6 +100,29 @@ const StyledDiv3 = styled.div`
 const StyledLi = styled.li`
   list-style-type: circle;
   list-style-position: inside;
+`;
+
+const StyledImg1 = styled.img`
+  width: 175px;
+  border-radius: 50%;
+  margin: 10px;
+`;
+const StyledImg2 = styled.img`
+  width: 175px;
+  border-radius: 10%;
+  margin: 10px 10px 65px 10px;
+`;
+
+const StyledImg3 = styled.img`
+  width: 175px;
+  border-radius: 5px;
+  margin: 10px;
+`;
+
+const StyledImg4 = styled.img`
+  width: 175px;
+  border-radius: 50%;
+  margin: 10px;
 `;
 
 export default LearningEvents;
