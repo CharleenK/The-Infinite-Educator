@@ -3,6 +3,13 @@ import learn20 from "../images/partnershipPics/learn20.png";
 import lesterB from "../images/partnershipPics/lesterB.png";
 import newFrontier from "../images/partnershipPics/newFrontier.png";
 import sirWilPel from "../images/partnershipPics/sirWilPel.png";
+import buildingClassroom from "../images/presentationPics/buildingClassroom6.jpeg";
+import empEdu from "../images/presentationPics/empEdu1.jpeg";
+import engaging from "../images/presentationPics/engaging2.jpeg";
+import positive from "../images/presentationPics/positive3.jpeg";
+import proDev from "../images/presentationPics/proDev4.jpeg";
+import workWellness from "../images/presentationPics/work&wellness5.jpeg";
+
 const LearningEvents = () => {
   return (
     <>
@@ -51,6 +58,21 @@ const LearningEvents = () => {
         </StyledDiv2>
         <StyledDiv2>
           <h2>Presentations</h2>
+          <StyledImgA src={empEdu} alt="poster of Empowering Educators" />
+          <StyledImgA
+            src={buildingClassroom}
+            alt="poster of Building a Community Classroom"
+          />
+          <StyledImgA src={engaging} alt="poster of Engaging Early Learners" />
+          <StyledImgA
+            src={positive}
+            alt="poster of Promoting Positive Behavior"
+          />
+          <StyledImgA
+            src={proDev}
+            alt="poster of Professional Development: School Age Educators"
+          />
+          <StyledImgA src={workWellness} alt="poster of Integrating Wellness" />
         </StyledDiv2>
         <StyledDiv2>
           <h2>Partnerships</h2>
@@ -109,7 +131,7 @@ const StyledImg1 = styled.img`
 `;
 const StyledImg2 = styled.img`
   width: 175px;
-  border-radius: 10%;
+  border-radius: 5px;
   margin: 10px 10px 65px 10px;
 `;
 
@@ -122,6 +144,12 @@ const StyledImg3 = styled.img`
 const StyledImg4 = styled.img`
   width: 175px;
   border-radius: 50%;
+  margin: 10px;
+`;
+
+const StyledImgA = styled.img`
+  width: 175px;
+  border-radius: 5px;
   margin: 10px;
 `;
 
