@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
-          <NavLink to="/learning">Partnerships</NavLink>
+          <NavLink to="/learning">Learning Events</NavLink>
           <NavLink to="/workshops">Workshops</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavMenu>
@@ -92,7 +92,7 @@ const StyledDiv3 = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  ${'' /* justify-content: space-around; */}
   width: 15%;
   height: 100%;
   position: absolute;
