@@ -58,31 +58,44 @@ const LearningEvents = () => {
         </StyledDiv2>
         <StyledDiv2>
           <h2>Presentations</h2>
-          <StyledImgA src={empEdu} alt="poster of Empowering Educators" />
-          <StyledImgA
-            src={buildingClassroom}
-            alt="poster of Building a Community Classroom"
-          />
-          <StyledImgA src={engaging} alt="poster of Engaging Early Learners" />
-          <StyledImgA
-            src={positive}
-            alt="poster of Promoting Positive Behavior"
-          />
-          <StyledImgA
-            src={proDev}
-            alt="poster of Professional Development: School Age Educators"
-          />
-          <StyledImgA src={workWellness} alt="poster of Integrating Wellness" />
+          <StyledDiv4>
+            <StyledImgA src={empEdu} alt="poster of Empowering Educators" />
+            <StyledImgA
+              src={buildingClassroom}
+              alt="poster of Building a Community Classroom"
+            />
+            <StyledImgA
+              src={engaging}
+              alt="poster of Engaging Early Learners"
+            />
+            <StyledImgA
+              src={positive}
+              alt="poster of Promoting Positive Behavior"
+            />
+            <StyledImgA
+              src={proDev}
+              alt="poster of Professional Development: School Age Educators"
+            />
+            <StyledImgA
+              src={workWellness}
+              alt="poster of Integrating Wellness"
+            />
+          </StyledDiv4>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Partnerships</h2>
-          <StyledImg1 src={learn20} alt="Learn 20 Logo" />
-          <StyledImg2 src={lesterB} alt="Lester B. Pearson School Board Logo" />
-          <StyledImg3
-            src={sirWilPel}
-            alt=" Sir Wilfred Laurier School Board Logo"
-          />
-          <StyledImg4 src={newFrontier} alt="New Frontiers Logo" />
+          <StyledDiv5>
+            <h2>Partnerships</h2>
+            <StyledImg1 src={learn20} alt="Learn 20 Logo" />
+            <StyledImg2
+              src={lesterB}
+              alt="Lester B. Pearson School Board Logo"
+            />
+            <StyledImg3
+              src={sirWilPel}
+              alt=" Sir Wilfred Laurier School Board Logo"
+            />
+            <StyledImg4 src={newFrontier} alt="New Frontiers Logo" />
+          </StyledDiv5>
         </StyledDiv2>
       </StyledDiv1>
     </>
@@ -91,7 +104,6 @@ const LearningEvents = () => {
 
 const StyledDiv1 = styled.div`
   display: flex;
-  border: 2px solid blue;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   flex-direction: column;
@@ -105,18 +117,32 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
-  border: 2px solid green;
+  ${"" /* border: 2px solid green; */}
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
 `;
 
 const StyledDiv3 = styled.div`
-  border: 4px solid orange;
+  border: 4px solid #7bb59b;
+  background-color: rgba(123, 181, 155, 0.5);
+  border-radius: 20px;
   box-sizing: border-box;
   text-align: left;
   padding: 1.5%;
   justify-content: flex-start;
+`;
+
+const StyledDiv4 = styled.div`
+  border: 4px solid #cadc73;
+  background-color: rgba(202, 220, 115, 0.5);
+  border-radius: 20px;
+`;
+
+const StyledDiv5 = styled.div`
+  border: 4px solid #f5b849;
+  background-color: rgba(245, 184, 73, 0.5);
+  border-radius: 20px;
 `;
 
 const StyledLi = styled.li`
@@ -125,30 +151,30 @@ const StyledLi = styled.li`
 `;
 
 const StyledImg1 = styled.img`
-  width: 175px;
+  width: 100px;
   border-radius: 50%;
   margin: 10px;
 `;
 const StyledImg2 = styled.img`
-  width: 175px;
+  width: 155px;
   border-radius: 5px;
-  margin: 10px 10px 65px 10px;
+  margin: 10px 10px 40px 10px;
 `;
 
 const StyledImg3 = styled.img`
-  width: 175px;
+  width: 100px;
   border-radius: 5px;
   margin: 10px;
 `;
 
 const StyledImg4 = styled.img`
-  width: 175px;
+  width: 100px;
   border-radius: 50%;
   margin: 10px;
 `;
 
 const StyledImgA = styled.img`
-  width: 175px;
+  width: 275px;
   border-radius: 5px;
   margin: 10px;
 `;
