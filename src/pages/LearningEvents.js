@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import learn20 from "../images/partnershipPics/learn20.png";
-import lesterB from "../images/partnershipPics/lesterB.png";
-import newFrontier from "../images/partnershipPics/newFrontier.png";
+import learn20 from "../images/partnershipPics/Learn20.png";
+import lesterB from "../images/partnershipPics/LesterB.png";
+import newFrontier from "../images/partnershipPics/NewFrontier.png";
 import sirWilPel from "../images/partnershipPics/sirWilPel.png";
 import buildingClassroom from "../images/presentationPics/buildingClassroom6.jpeg";
 import empEdu from "../images/presentationPics/empEdu1.jpeg";
@@ -17,7 +17,7 @@ const LearningEvents = () => {
         <h1>Learning Events</h1>
         <StyledDiv2>
           <h2>Workshops</h2>
-          <h3>Childcare Teachers and Educators</h3>
+          <h3>Childcare</h3>
           <StyledDiv3>
             <ul>
               <StyledLi>
