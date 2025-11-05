@@ -143,8 +143,8 @@ const StyledImg2 = styled.img`
 `;
 const StyledImg3 = styled.img`
   width: 100%;
-  height: auto;
   border-radius: 5px;
+  height: auto;
   @media only screen and (min-width: 1001px) {
     width: 50%;
   }

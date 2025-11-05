@@ -7,13 +7,13 @@ import profilePic from "../images/aboutPagePics/profile.jpeg";
 const About = () => {
   return (
     <>
-      <StyledDivA>
-        <StyledH1>
-          The Infinite Educator: Childcare Solutions that Inspire!
-        </StyledH1>
-        <StyledImg1 src={childMessyHands} alt="child with painted hands" />
-      </StyledDivA>
       <StyledDiv1>
+        <StyledDivA>
+          <StyledH1>
+            The Infinite Educator: Childcare Solutions that Inspire!
+          </StyledH1>
+          <StyledImg1 src={childMessyHands} alt="child with painted hands" />
+        </StyledDivA>
         <StyledDiv2>
           <StyledH2>Our Guiding Principles</StyledH2>
           <StyledImg2
@@ -86,37 +86,36 @@ const About = () => {
   );
 };
 
-const StyledDivA = styled.div`
-  position: relative;
-`;
 const StyledH1 = styled.h1`
   text-align: center;
   position: absolute;
-  font-size: 4.5vw;
-  color: rgba(75, 229, 160, 1);
-  top: 20%;
+  top: 22%;
   left: 32%;
   transform: translate(-50%, -50%);
+  @media only screen and (max-width: 1000px) {
+    font-size: 4.5vw;
+  }
+  @media only screen and (min-width: 1001px) {
+    font-size: 3.75vw;
+  }
 `;
 
 const StyledH2 = styled.h2`
   font-size: 4vw;
-  color: rgba(241, 254, 248, 1);
   padding: 1%;
 `;
 
 const StyledH3 = styled.h3`
   font-size: 3vw;
-  color: rgba(241, 254, 248, 1);
   padding: 1%;
 `;
 
 const StyledH4 = styled.h4`
+  font-size: 2.25vw;
   padding: 1%;
 `;
 
 const StyledDiv1 = styled.div`
-  border: 2px solid blue;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   display: inline-flex;
@@ -129,25 +128,40 @@ const StyledDiv1 = styled.div`
   padding: 1.5%;
 `;
 
+const StyledDivA = styled.div`
+  position: relative;
+  text-align: center;
+`;
 const StyledDiv2 = styled.div`
-  border: 2px solid green;
+  border: 4px solid #7bb59b;
   border-radius: 25px;
   margin: 2.5%;
   padding: 0% 1.5% 1.5%;
 `;
 
 const StyledDiv3 = styled.div`
-  border: 3px solid pink;
   font-size: 2vw;
   padding: 1%;
 `;
 
 const StyledImg1 = styled.img`
-  width: 75%;
   height: auto;
-  margin-left: 12.5%;
   border: 10px solid white;
-  border-radius: 5px;
+  border-radius: 25px;
+  border: 4px solid #7bb59b;
+  width: 100%;
+  @media only screen and (min-width: 1001px) {
+    width: 111%;
+    margin-left: -5.75%;
+  }
+  @media only screen and (min-width: 1100px) {
+    width: 125%;
+    margin-left: -12.55%;
+  }
+  @media only screen and (min-width: 1100px) {
+    width: 150%;
+    margin-left: -25%;
+  }
 `;
 const StyledImg2 = styled.img`
   width: 50%;
