@@ -107,9 +107,6 @@ const StyledDiv1 = styled.div`
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   flex-direction: column;
-  ${"" /* justify-content: center; */}
-  ${"" /* align-items: center; */}
-  ${"" /* align-content: center; */}
   text-align: center;
   margin: 2.5%;
   padding: 1.5%;
@@ -117,7 +114,6 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
-  ${"" /* border: 2px solid green; */}
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;

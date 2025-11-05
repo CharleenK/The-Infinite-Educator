@@ -5,7 +5,7 @@ const Workshops = () => {
     <>
       <StyledDiv1>
         <StyledDiv3>
-          <h2>Childcare:</h2>
+          <StyledH2>Childcare:</StyledH2>
           <p>
             Collaborating with PreK and Kindergarten teachers to provide
             guidance on facilitating free play experiences, optimizing classroom
@@ -13,9 +13,9 @@ const Workshops = () => {
             stages and milestones.
           </p>
 
-          <h3>
+          <StyledH3>
             Creating a community classroom: Classroom management techniques
-          </h3>
+          </StyledH3>
           <ul>
             <StyledLi>
               Created from the developmentally appropriate approach that every
@@ -36,9 +36,9 @@ const Workshops = () => {
               the result of supporting the children’s overall development.
             </StyledLi>
           </ul>
-          <h3>
+          <StyledH3>
             Embracing Play: Innovative Strategies for Learning Environments
-          </h3>
+          </StyledH3>
           <ul>
             <StyledLi>
               Dives into creating a learning environment that embraces
@@ -58,7 +58,7 @@ const Workshops = () => {
               children in their overall development.
             </StyledLi>
           </ul>
-          <h3>Challenging Behaviors: Part 1</h3>
+          <StyledH3>Challenging Behaviors: Part 1</StyledH3>
           <ul>
             <StyledLi>
               Supports educators with insight into children’s challenging
@@ -107,19 +107,17 @@ const Workshops = () => {
           </ul>
         </StyledDiv3>
         <StyledDiv2>
-          <h2>Educator Wellness:</h2>
+          <StyledH2>Educator Wellness:</StyledH2>
           <h3>Resiliance in Early childhood: Educators' role and mindset</h3>
           <ul>
             <StyledLi>
               Speaks to the educator about building resiliency into their
               everyday lives.
             </StyledLi>
+            <StyledLi>Highlights the importance of a growth mindset.</StyledLi>
             <StyledLi>
-              Highlights the importance of a growth mindset.
-              <StyledLi>
-                Emphasizes the valuable role that educators play in the lives of
-                children and their families.
-              </StyledLi>
+              Emphasizes the valuable role that educators play in the lives of
+              children and their families.
             </StyledLi>
             <StyledLi>
               Guides the educator into becoming a Champion of Resiliency!
@@ -149,8 +147,8 @@ const Workshops = () => {
             </StyledLi>
           </ul>
         </StyledDiv2>
-        <StyledDiv2>
-          <h2>School-age:</h2>
+        <StyledDiv4>
+          <StyledH2>School-age:</StyledH2>
           <p>
             Building a community of learners in after school care. The beginning
             of a new school year sets the tone for the months ahead and plays a
@@ -162,7 +160,9 @@ const Workshops = () => {
             care programs play a vital role in supporting the social, emotional,
             and academic development of school age children.
           </p>
-          <h3>Affective Relationships: Building a community of learners</h3>
+          <StyledH3>
+            Affective Relationships: Building a community of learners
+          </StyledH3>
           <ul>
             <StyledLi>
               Supports educators in building strong affective relationships with
@@ -184,7 +184,9 @@ const Workshops = () => {
               and create a community of learners in after school care.
             </StyledLi>
           </ul>
-          <h3>Strategies and Solutions: Children’s Challenging Behaviours</h3>
+          <StyledH3>
+            Strategies and Solutions: Children’s Challenging Behaviours
+          </StyledH3>
           <ul>
             <StyledLi>
               Provides educators with tools and strategies that are both
@@ -208,10 +210,10 @@ const Workshops = () => {
               after school experience.
             </StyledLi>
           </ul>
-          <h3>
+          <StyledH3>
             Making a difference: The important role that school age educators
             have in the lives of young children
-          </h3>
+          </StyledH3>
           <ul>
             <StyledLi>
               Addresses the important role that school age educators have in the
@@ -240,9 +242,9 @@ const Workshops = () => {
           </ul>
           <h3>Embracing Play:</h3>
           <p>coming soon...</p>
-        </StyledDiv2>
+        </StyledDiv4>
         <StyledDiv5>
-          <h2> Workshops include:</h2>
+          <StyledH2> Workshops include:</StyledH2>
           <ul>
             <li>
               A pre-meeting between presenter and organizer to narrow down the
@@ -267,9 +269,6 @@ const StyledDiv1 = styled.div`
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   flex-direction: column;
-  ${"" /* justify-content: center; */}
-  ${"" /* align-items: center; */}
-  ${"" /* align-content: center; */}
   text-align: center;
   margin: 2.5%;
   padding: 1.5%;
@@ -277,21 +276,30 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
-  border: 2px solid green;
+  border: 4px solid #cadc73;
+  background-color: rgba(202, 220, 115, 0.5);
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
 `;
 
 const StyledDiv3 = styled.div`
-  border: 2px solid green;
+  border: 4px solid #7bb59b;
+  background-color: rgba(123, 181, 155, 0.5);
+  border-radius: 25px;
+  margin: 2.5%;
+  padding: 1.5%;
+`;
+
+const StyledDiv4 = styled.div`
+  border: 4px solid #f5b849;
+  background-color: rgba(245, 184, 73, 0.5);
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
 `;
 
 const StyledDiv5 = styled.div`
-  ${"" /* border: 2px solid green; */}
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
@@ -303,6 +311,14 @@ const StyledLi = styled.li`
   list-style-position: inside;
   text-align: left;
   margin: 10px;
+`;
+
+const StyledH2 = styled.h2`
+  padding: 5px;
+`;
+
+const StyledH3 = styled.h3`
+  padding: 10px;
 `;
 
 export default Workshops;
