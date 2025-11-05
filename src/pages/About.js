@@ -1,5 +1,3 @@
-import React from "react";
-// import "../styles/background.css";
 import styled from "styled-components";
 import childMessyHands from "../images/aboutPagePics/childMessyHands2.jpg";
 import teacherAndBalloons from "../images/aboutPagePics/teacher&balloons2.jpg";
