@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/learning">Learning Events</NavLink>
           <NavLink to="/workshops">Workshops</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          {/* <NavLink to="/contact">Contact</NavLink> */}
         </NavMenu>
         <StyledDiv3>
           <p>
@@ -92,7 +92,6 @@ const StyledDiv3 = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  ${'' /* justify-content: space-around; */}
   width: 15%;
   height: 100%;
   position: absolute;

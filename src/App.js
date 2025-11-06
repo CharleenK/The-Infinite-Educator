@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Workshops from "./pages/Workshops";
 import Services from "./pages/Services";
 import LearningEvents from "./pages/LearningEvents";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import GlobalStyle from "./globalStyles";
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/workshops" element={<Workshops />} />
         <Route path="/services" element={<Services />} />
         <Route path="/learning" element={<LearningEvents />} />
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="contact" element={<Contact />} /> */}
       </Routes>
     </>
   );

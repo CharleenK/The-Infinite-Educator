@@ -1,10 +1,7 @@
 import styled from "styled-components";
-// import colorfulClay from "../images/servicesPics/colorfulClay.jpg";
 import teacherHug from "../images/servicesPics/teacher&hug2.jpg";
 import holdingHands from "../images/servicesPics/holdingHands.jpg";
-// import teacherMotivation from "../
 import bricolage from "../images/servicesPics/bricolage2.jpg";
-// import specialNeeds from "../images/servicesPics/specialNeeds2.jpg";
 import brightClassroom from "../images/servicesPics/brightClassroom2.jpg";
 
 const Services = () => {
@@ -12,19 +9,14 @@ const Services = () => {
     <>
       <StyledDiv1>
         <StyledDiv2>
-          <h1>Our Services</h1>
+          <StyledH1>Our Services</StyledH1>
           <StyledDiv3>
-            {" "}
             <p>
               The Infinite Educator offers a range of workshops and mentoring
               services to support, inspire and create a positive early childhood
               community.
             </p>
           </StyledDiv3>
-          {/* <StyledImg1
-          src={colorfulClay}
-          alt="toddler placing clay to form a row"
-        /> */}
           <StyledDiv3>
             <p>
               The Infinite Educator specializes in early childhood, out of
@@ -33,10 +25,9 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Room Assessments & Arrangement:</h2>
+          <StyledH2>Room Assessments & Arrangement:</StyledH2>
           <StyledImg1 src={brightClassroom} alt="bright, organized classroom" />
           <StyledDiv3>
-            {" "}
             <p>
               To assist educators in creating age and developmentally supportive
               classroom environments that foster learning through play.
@@ -44,13 +35,8 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Program Consultations:</h2>
-          {/* <StyledImg1
-            src={specialNeeds}
-            alt="teacher playing with special needs child"
-          /> */}
+          <StyledH2>Program Consultations:</StyledH2>
           <StyledDiv3>
-            {" "}
             <p>
               To offer comprehensive program consultation that empowers
               educators to deliver a positive, evidence based, and
@@ -59,10 +45,9 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>PreK and Kindergarten workshops:</h2>
+          <StyledH2>PreK and Kindergarten workshops:</StyledH2>
           <StyledImg1 src={bricolage} alt="child using scissors" />
           <StyledDiv3>
-            {" "}
             <p>
               To collaborate with PreK and Kindergarten teachers to provide
               guidance on facilitating free play experiences, optimizing
@@ -72,9 +57,8 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Educator Support & Development:</h2>
+          <StyledH2>Educator Support & Development:</StyledH2>
           <StyledDiv3>
-            {" "}
             <p>
               To empower educators to elevate their teaching skills, inspire
               professional growth and enhance educational excellence.
@@ -82,13 +66,12 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Power of Positive Guidance:</h2>
+          <StyledH2>Power of Positive Guidance:</StyledH2>
           <StyledImg1
             src={holdingHands}
             alt="child's hand holding adult's finger"
           />
           <StyledDiv3>
-            {" "}
             <p>
               To deliver evidence-based classroom management strategies that are
               designed for immediate application in the classroom and support
@@ -97,10 +80,8 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>After school team building:</h2>
-          {/* <StyledImg1 src={teacherMotivation} alt="group high-fiving" /> */}
+          <StyledH2>After school team building:</StyledH2>
           <StyledDiv3>
-            {" "}
             <p>
               To foster a collaborative and supportive workplace culture,
               supporting positive personal dynamics to create an engaging team
@@ -109,10 +90,9 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Educator Wellness:</h2>
+          <StyledH2>Educator Wellness:</StyledH2>
           <StyledImg1 src={teacherHug} alt="child hugging teacher" />
           <StyledDiv3>
-            {" "}
             <p>
               To empower educators with comprehensive, evidence-based strategies
               that restore professional fulfillment, mitigate workplace stress
@@ -121,7 +101,7 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h3>Reflective Practices:</h3>
+          <StyledH2>Reflective Practices:</StyledH2>
           <StyledDiv3>
             <p>
               To empower educators and teachers in enhancing their reflective
@@ -135,9 +115,28 @@ const Services = () => {
   );
 };
 
+const StyledH1 = styled.h1`
+  padding: 25px;
+  @media only screen and (max-width: 1000px) {
+    font-size: 5vw;
+  }
+  @media only screen and (min-width: 1001px) {
+    font-size: 4vw;
+  }
+`;
+
+const StyledH2 = styled.h2`
+  padding: 10px;
+  @media only screen and (max-width: 1000px) {
+    font-size: 3.5vw;
+  }
+  @media only screen and (min-width: 1001px) {
+    font-size: 2.5vw;
+  }
+`;
+
 const StyledDiv1 = styled.div`
   display: inline-flex;
-  border: 2px solid blue;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   display: inline-flex;
@@ -151,24 +150,23 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
-  border: 2px solid green;
   border-radius: 25px;
   margin: 2.5%;
   padding: 0% 1.5% 1.5%;
+  background-color: rgba(255, 255, 255, 0.3);
 `;
 
 const StyledDiv3 = styled.div`
-  border: 4px solid orange;
   font-size: 2.25vw;
-  ${
-    "" /* @media only screen and(min-width:500px) {
-    font-size: 5vw; */
+  padding: 5px;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
   }
-  ${"" /* } */}
 `;
 
 const StyledImg1 = styled.img`
   width: 350px;
+  border-radius: 10px;
 `;
 
 export default Services;

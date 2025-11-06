@@ -240,8 +240,8 @@ const Workshops = () => {
               the children they work with everyday.
             </StyledLi>
           </ul>
-          <h3>Embracing Play:</h3>
-          <p>coming soon...</p>
+          {/* <h3>Embracing Play:</h3>
+          <p>coming soon...</p> */}
         </StyledDiv4>
         <StyledDiv5>
           <StyledH2> Workshops include:</StyledH2>
@@ -281,6 +281,9 @@ const StyledDiv2 = styled.div`
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledDiv3 = styled.div`
@@ -289,6 +292,9 @@ const StyledDiv3 = styled.div`
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledDiv4 = styled.div`
@@ -297,6 +303,9 @@ const StyledDiv4 = styled.div`
   border-radius: 25px;
   margin: 2.5%;
   padding: 1.5%;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledDiv5 = styled.div`
@@ -304,6 +313,9 @@ const StyledDiv5 = styled.div`
   margin: 2.5%;
   padding: 1.5%;
   text-align: left;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledLi = styled.li`
@@ -315,10 +327,12 @@ const StyledLi = styled.li`
 
 const StyledH2 = styled.h2`
   padding: 5px;
+  margin: 5px;
 `;
 
 const StyledH3 = styled.h3`
-  padding: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
 `;
 
 export default Workshops;

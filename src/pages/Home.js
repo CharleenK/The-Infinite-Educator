@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../Components/Footer";
 import "../styles/background.css";
 import styled from "styled-components";
-// import brightIdea from "../images/homePagePics/brightIdea2.png";
 import paintedChild from "../images/servicesPics/paintedChild.jpg";
 
 import storyTime from "../images/homePagePics/storyTime2.jpg";
@@ -69,26 +68,39 @@ const Home = () => {
 };
 
 const StyledH1 = styled.h1`
-  font-size: 6vw;
-  color: rgba(16, 145, 87, 1);
+  ${"" /* color: rgba(16, 145, 87, 1); */}
+  padding: 10px;
+  @media only screen and (max-width: 1000px) {
+    font-size: 6vw;
+  }
+  @media only screen and (min-width: 1001px) {
+    font-size: 4vw;
+  }
 `;
 
 const StyledH2 = styled.h2`
-  font-size: 3.5vw;
-  color: rgba(241, 254, 248, 1);
+  padding: 10px;
+  @media only screen and (max-width: 1000px) {
+    font-size: 3.5vw;
+  }
+  @media only screen and (min-width: 1001px) {
+    font-size: 2.5vw;
+  }
 `;
 const StyledDiv1 = styled.div`
-  border: 2px solid blue;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  @media only screen and (min-width: 1001px) {
+  }
 `;
 
 const StyledDiv2 = styled.div`
   display: flex;
-  border: 2px solid green;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
   margin: auto;
   width: 98%;
   padding: 1.5%;
@@ -98,8 +110,9 @@ const StyledDiv2 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
-  border: 2px solid black;
+  ${"" /* border: 2px solid black; */}
   background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
   width: 95%;
   font-size: 2vw;
   padding: 1.5%;
@@ -107,19 +120,34 @@ const StyledDiv3 = styled.div`
   align-items: center;
   align-content: center;
   line-height: 1.5;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledImg1 = styled.img`
   width: 100%;
   height: auto;
+  border-radius: 5px;
+  @media only screen and (min-width: 1001px) {
+    width: 50%;
+  }
 `;
 const StyledImg2 = styled.img`
   width: 100%;
   height: auto;
+  border-radius: 5px;
+  @media only screen and (min-width: 1001px) {
+    width: 50%;
+  }
 `;
 const StyledImg3 = styled.img`
   width: 100%;
+  border-radius: 5px;
   height: auto;
+  @media only screen and (min-width: 1001px) {
+    width: 50%;
+  }
 `;
 
 export default Home;
