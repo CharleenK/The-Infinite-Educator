@@ -28,32 +28,32 @@ const Navbar = () => {
           {/* <NavLink to="/contact">Contact</NavLink> */}
         </NavMenu>
         <StyledDiv3>
-          <p>
+          <StyledDivA>
             <a
               href="https://www.facebook.com/profile.php?id=100066017271883"
               target="_blank"
             >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-          </p>
-          <p>
+          </StyledDivA>
+          <StyledDivA>
             <a
               href="https://www.linkedin.com/in/donna-skea-71771aa7"
               target="_blank"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-          </p>
+          </StyledDivA>
+          <StyledDivA>
+            <a href="mailto:Donna.skea30@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </StyledDivA>
           {/* <p>
             <a href="1-514-651-6621">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
           </p> */}
-          <p>
-            <a href="mailto:Donna.skea30@gmail.com" target="_blank">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </p>
         </StyledDiv3>
       </Nav>
     </>
@@ -71,32 +71,32 @@ const StyledDiv1 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  border: 3px solid black;
 `;
 
 const StyledImg = styled.img`
   display: flex;
   width: 6.2vw;
-  border: 2px solid purple;
 `;
 
 const StyledDiv2 = styled.div`
-  border: 3px solid green;
   font-size: 30px;
   @media only screen and (max-width: 1425px) {
     font-size: 20px;
   }
 `;
 const StyledDiv3 = styled.div`
-  border: 3px solid pink;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 15%;
+  align-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 10%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  margin-right: 8px;
   @media only screen and (max-width: 1300px) {
     width: 5%;
     display: block;
@@ -104,6 +104,22 @@ const StyledDiv3 = styled.div`
   @media only screen and (max-width: 400px) {
     width: 7.5%;
     display: block;
+  }
+`;
+const StyledDivA = styled.div`
+  padding: 2px;
+  margin: 2px;
+  @media only screen and (max-width: 412px) {
+    font-size: 15px;
+  }
+  @media only screen and (min-width: 413px) {
+    font-size: 20px;
+  }
+  @media only screen and (min-width: 900px) {
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 1300px) {
+    font-size: 30px;
   }
 `;
 
