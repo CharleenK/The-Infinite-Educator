@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/learning">Learning Events</NavLink>
           <NavLink to="/workshops">Workshops</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          {/* <NavLink to="/contact">Contact</NavLink> */}
         </NavMenu>
         <StyledDiv3>
           <p>

@@ -16,9 +16,9 @@ const LearningEvents = () => {
       <StyledDiv1>
         <h1>Learning Events</h1>
         <StyledDiv2>
-          <h2>Workshops</h2>
-          <h3>Childcare</h3>
+          <StyledH2>Workshops</StyledH2>
           <StyledDiv3>
+            <h3>Childcare</h3>
             <ul>
               <StyledLi>
                 Creating a community classroom: Classroom management techniques
@@ -30,8 +30,8 @@ const LearningEvents = () => {
               <StyledLi>Challenging Behaviors: Part 2</StyledLi>
             </ul>
           </StyledDiv3>
-          <h3>Educator wellness</h3>
           <StyledDiv3>
+            <h3>Educator wellness</h3>
             <ul>
               <StyledLi>
                 Resiliance in Early childhood: Educators' role and mindset
@@ -42,8 +42,8 @@ const LearningEvents = () => {
               </StyledLi>
             </ul>
           </StyledDiv3>
-          <h3>School Age</h3>
           <StyledDiv3>
+            <h3>School Age</h3>
             <StyledLi>
               Affective Relationships: Building a community of learners
             </StyledLi>
@@ -57,7 +57,7 @@ const LearningEvents = () => {
           </StyledDiv3>
         </StyledDiv2>
         <StyledDiv2>
-          <h2>Presentations</h2>
+          <StyledH2>Presentations</StyledH2>
           <StyledDiv4>
             <StyledImgA src={empEdu} alt="poster of Empowering Educators" />
             <StyledImgA
@@ -83,8 +83,8 @@ const LearningEvents = () => {
           </StyledDiv4>
         </StyledDiv2>
         <StyledDiv2>
+          <StyledH2>Partnerships</StyledH2>
           <StyledDiv5>
-            <h2>Partnerships</h2>
             <StyledImg1 src={learn20} alt="Learn 20 Logo" />
             <StyledImg2
               src={lesterB}
@@ -101,6 +101,10 @@ const LearningEvents = () => {
     </>
   );
 };
+
+const StyledH2 = styled.h2`
+  padding: 5px;
+`;
 
 const StyledDiv1 = styled.div`
   display: flex;
@@ -126,19 +130,25 @@ const StyledDiv3 = styled.div`
   box-sizing: border-box;
   text-align: left;
   padding: 1.5%;
+  margin: 10px;
   justify-content: flex-start;
+  @media only screen and (min-width: 1001px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const StyledDiv4 = styled.div`
   border: 4px solid #cadc73;
   background-color: rgba(202, 220, 115, 0.5);
   border-radius: 20px;
+  margin: 10px;
 `;
 
 const StyledDiv5 = styled.div`
   border: 4px solid #f5b849;
   background-color: rgba(245, 184, 73, 0.5);
   border-radius: 20px;
+  margin: 10px;
 `;
 
 const StyledLi = styled.li`
