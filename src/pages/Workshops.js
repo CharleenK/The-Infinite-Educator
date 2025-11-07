@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../Components/Footer";
 
 const Workshops = () => {
   return (
@@ -260,6 +261,7 @@ const Workshops = () => {
           </ul>
         </StyledDiv5>
       </StyledDiv1>
+      <Footer />
     </>
   );
 };

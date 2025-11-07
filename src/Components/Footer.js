@@ -1,12 +1,20 @@
+import styled from "styled-components";
+
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <StyledFooter>
         <p className="text-footer">
           Copyright ©2022 The Infinite Educator-All rights are reserved
         </p>
-      </footer>
+      </StyledFooter>
     </>
   );
 };
+
+const StyledFooter= styled.footer`
+padding-bottom: 10px;
+text-align: center;
+`
+
 export default Footer;
