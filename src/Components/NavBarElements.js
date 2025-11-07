@@ -5,12 +5,10 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   display: flex;
   height: 100px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  aligns-items: center;
+  align-content: center;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
-  font-size: 20px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -19,47 +17,48 @@ export const Nav = styled.nav`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 `;
 
-export const NavLink = styled(Link)`
-  color: rgb(2, 52, 254);
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  &.active {
-    color: #4d4dff;
-  }
-`;
-
-// export const Titles = styled.div`
-//   display: none;
-//   color: #808080;
-//   @media screen and (max-width: 768px) {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 75%);
-//     font-size: 1.8rem;
-//     cursor: pointer;
-//   }
-// `;
-
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -30px;
+  align-content: center;
+  height: 100%;
+  width: 75%;
 
-  @media screen and (max-width: 764px) {
-    ${"" /* display: none; */}
+  @media screen and (max-width: 429px) {
     font-size: 18px;
     flex-wrap: wrap;
-    margin-left: 200px;
-    margin-right: 20px;
+    margin-left: 91px;
+    margin-right: 15px;
   }
-  @media screen and (max-width: 1175px) {
-    margin-left: 200px;
+  @media screen and (min-width: 500px) {
+    font-size: 18px;
+    margin-left: 150px;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+    margin-left: 215px;
+    padding: 2px;
+  }
+  @media screen and (min-width: 915px) {
+    font-size: 22px;
+    margin-left: 250px;
+    padding: 2px;
+  }
+`;
+export const NavLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  color: black;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  &.active {
+    color: green;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 28px;
   }
 `;
