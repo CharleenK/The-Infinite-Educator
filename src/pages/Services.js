@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../Components/Footer";
 import teacherHug from "../images/servicesPics/teacher&hug2.jpg";
 import holdingHands from "../images/servicesPics/holdingHands.jpg";
 import bricolage from "../images/servicesPics/bricolage2.jpg";
@@ -111,6 +112,7 @@ const Services = () => {
           </StyledDiv3>
         </StyledDiv2>
       </StyledDiv1>
+      <Footer />
     </>
   );
 };

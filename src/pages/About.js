@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../Components/Footer";
 import childMessyHands from "../images/aboutPagePics/childMessyHands2.jpg";
 import teacherAndBalloons from "../images/aboutPagePics/teacher&balloons2.jpg";
 import teacherLaptop from "../images/aboutPagePics/teacherLaptop2.jpg";
@@ -55,9 +56,9 @@ const About = () => {
           <StyledImg4 src={profilePic} alt="profile picture" />
           <StyledDiv3>
             <p>
-              With 30 years of experience in Early Childhood Education, I
-              founded The Infinite Educator to empower and support educators and
-              childcare centers.
+              With 30 years of experience in Early Childhood Education and a
+              Masters in Child Studies, I founded The Infinite Educator to
+              empower and support educators and childcare centers.
             </p>
           </StyledDiv3>
           <StyledDiv3>
@@ -82,6 +83,7 @@ const About = () => {
           </StyledDiv3>
         </StyledDiv2>
       </StyledDiv1>
+      <Footer />
     </>
   );
 };

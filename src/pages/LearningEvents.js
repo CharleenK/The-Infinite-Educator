@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../Components/Footer";
 import learn20 from "../images/partnershipPics/Learn20.png";
 import lesterB from "../images/partnershipPics/LesterB.png";
 import newFrontier from "../images/partnershipPics/NewFrontier.png";
@@ -98,6 +99,7 @@ const LearningEvents = () => {
           </StyledDiv5>
         </StyledDiv2>
       </StyledDiv1>
+      <Footer />
     </>
   );
 };
